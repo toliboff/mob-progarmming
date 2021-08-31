@@ -1,6 +1,5 @@
-function catAndMouse(x, y, z) {
-    return Math.abs(z-x)<Math.abs(z-y)?'Cat A':Math.abs(z-x)>Math.abs(z-y)?'Cat B':'Mouse C'
-
+function findDigits(n) {
+    return (''+n).split('').filter(num=>n%num===0).length;
 }
 
-catAndMouse(1,2,3)// 'Mouse C'
+findDigits(12, 1024) // 2, 3
